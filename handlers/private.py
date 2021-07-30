@@ -25,7 +25,7 @@ async def start(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "Group 💬", url="https://t.me/phoenix_music_support_help"
+                        "Group 💬", url="https://t.me/phoenix_music_suport"
                     ),
                     InlineKeyboardButton(
                         "Channel 📣", url="https://t.me/phoenix_music_new"
@@ -112,7 +112,7 @@ def a(client, message):
         m.delete()
         message.delete()
     except Exception as e:
-        m.edit('**An Error Occured. Please Report This To [SUPORT GROUP](https://t.me/phoenix_music_support_help) !!**')
+        m.edit('**An Error Occured. Please Report This To [SUPORT GROUP](https://t.me/phoenix_music_suport) !!**')
         print(e)
     try:
         os.remove(audio_file)
