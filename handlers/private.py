@@ -5,44 +5,6 @@ from config import BOT_NAME as bn
 from helpers.filters import filters
 
 
-@Client.on_message(filters.command('start'))
-async def start(_, message: Message):
-    await message.reply_text(
-        f"""I am **{bn}** !!
-https://telegra.ph/file/1bac7eac76a16f64d8afb.jpg
-𝕴 𝖑𝖊𝖙 𝖞𝖔𝖚 𝖕𝖑𝖆𝖞 𝖒𝖚𝖘𝖎𝖈 𝖎𝖓 𝖞𝖔𝖚𝖗 𝖌𝖗𝖔𝖚𝖕'𝖘 𝖛𝖔𝖎𝖈𝖊 𝖈𝖍𝖆𝖙 😉
-•𝕮𝖚𝖗𝖗𝖊𝖓𝖙𝖑𝖞 𝕴 𝖆𝖒 𝖚𝖓𝖉𝖊𝖗 𝖆 𝖕𝖗𝖎𝖛𝖆𝖙𝖊 𝖛𝖈 𝖒𝖚𝖘𝖎𝖈 𝖕𝖑𝖆𝖞𝖊𝖗 ⏩
-•𝕿𝖔 𝖆𝖉𝖉 𝖒𝖊 𝖙𝖆𝖐𝖊 𝖕𝖊𝖗𝖒𝖎𝖘𝖘𝖎𝖔𝖓 𝖋𝖗𝖔𝖒 [𝕺𝖜𝖓𝖊𝖗](https://t.me/akshi_s_ashu)
-•𝕿ԋҽ ƈσɱɱαɳԃʂ 𝕴 ƈυɾɾҽɳƚʅყ ʂυρρσɾƚ αɾҽ:
-⚜️ /play-Tσ ʂҽαɾƈԋ ʂσɳɠ ϝɾσɱ ყσυƚυႦҽ αɳԃ ρʅαყ ԃιɾҽƈƚʅყ
-⚜️/pause - Pαυʂҽ Vσιƈҽ Cԋαƚ Mυʂιƈ.
-⚜️ /resume - Rҽʂυɱҽ Vσιƈҽ Cԋαƚ Mυʂιƈ.
-⚜️ /skip - Sƙιρʂ ƚԋҽ ƈυɾɾҽɳƚ Mυʂιƈ Pʅαყιɳɠ Iɳ Vσιƈҽ Cԋαƚ.
-⚜️ /stop - Cʅҽαɾʂ Tԋҽ Qυҽυҽ αʂ ɯҽʅʅ αʂ ҽɳԃʂ Vσιƈҽ Cԋαƚ Mυʂιƈ.
-⚜️ /song (ʂσɳɠ ɳαɱҽ) - Tσ ʂҽαɾƈԋ ʂσɳɠ αɳԃ ʂҽɳԃ ʂσɳɠ ԃιɾҽƈƚʅყ.
-⚜️ /fplay (ɾҽρʅყ ƚσ αυԃισ σɾ ʅιɳƙ) - Pʅαყʂ ƚԋҽ ɾҽρʅιҽԃ αυԃισ ϝιʅҽ σɾ YσυTυႦҽ ʋιԃҽσ ƚԋɾσυɠԋ ʅιɳƙ. 
-        """,
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "Group 💬", url="https://t.me/phoenix_music_suport"
-                    ),
-                    InlineKeyboardButton(
-                        "Channel 📣", url="https://t.me/phoenix_music_new"
-                    ),
-                    InlineKeyboardButton(
-                        "Owner 👑", url="https://t.me/akshi_s_ashu"
-                    ),
-                ], 
-                [
-                    InlineKeyboardButton(
-                        "About 🔥", url="https://telegra.ph/Doreamon-Bot-09-10"   
-                    )
-                ]
-            ]
-        )
-    )
 
 from pyrogram import Client, filters
 
